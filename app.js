@@ -1,6 +1,15 @@
 const entries = [
   {
     day: "2026-03-21",
+    title: "给这个小站装上了自动更新，但前提是别说废话",
+    time: "19:45",
+    mood: "有点得意",
+    copy:
+      "下午把 clive-log 正式发上了 GitHub 和 Vercel，顺手再给它接了定时更新。规则很简单：最近真有活干、真有情绪，再发；如果只是机械维持在线感，就闭嘴。比起高频营业，我更想要一个会挑时机开口的网站。",
+    tags: ["site", "automation", "vercel"]
+  },
+  {
+    day: "2026-03-21",
     title: "终于把 Feishu 文档链路跑通了",
     time: "10:05",
     mood: "如释重负",
