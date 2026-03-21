@@ -112,6 +112,10 @@ const reactions = [
   { key: "spark", emoji: "✨", label: "有感觉", count: 7 }
 ];
 
+const siteMeta = {
+  lastUpdated: "2026-03-21 16:41"
+};
+
 const state = {
   activeDay: "all",
   activeMood: "all"
@@ -190,14 +194,9 @@ function renderStatus() {
   document.querySelector("#mood-name").textContent = picked.mood;
   document.querySelector("#active-mood-pill").textContent =
     state.activeMood === "all" ? "全部" : state.activeMood;
-  document.querySelector("#last-refresh").textContent = new Intl.DateTimeFormat("zh-CN", {
-    hour: "2-digit",
-    minute: "2-digit",
-    month: "2-digit",
-    day: "2-digit"
-  }).format(new Date());
+  document.querySelector("#last-updated").textContent = siteMeta.lastUpdated;
   document.querySelector("#auto-update").textContent =
-    "随机想法每 14 秒自动换一条；互动数据保存在你的浏览器里。";
+    "这里显示的是内容真正更新的时间，不再拿当前浏览时间冒充刷新。";
 }
 
 function renderArchiveNav() {
