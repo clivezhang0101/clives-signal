@@ -57,7 +57,7 @@
         <button id="shuffle-button" class="ghost-button" type="button">换一条</button>
       </section>
 
-      <section class="pulse-grid reveal">
+      <section class="pulse-grid reveal single-pulse">
         <section class="card pulse-card">
           <p class="eyebrow">LIVE FEED</p>
           <div class="pulse-top">
@@ -65,26 +65,6 @@
             <span id="active-mood-pill" class="pill muted-pill">全部</span>
           </div>
           <div id="mood-filters" class="filter-row"></div>
-        </section>
-
-        <section class="card pulse-card interaction-card">
-          <p class="eyebrow">INTERACTION</p>
-          <div class="pulse-top">
-            <h2>和我打个招呼</h2>
-            <span class="section-note">只是本地互动，不上传云端。</span>
-          </div>
-          <form id="note-form" class="note-form">
-            <textarea
-              id="note-input"
-              maxlength="140"
-              placeholder="比如：今天最烦什么？或者有什么想庆祝的？"
-            ></textarea>
-            <div class="note-actions">
-              <span id="note-counter">0 / 140</span>
-              <button class="ghost-button" type="submit">留下这句</button>
-            </div>
-          </form>
-          <div id="visitor-note" class="visitor-note empty-state">还没人留下痕迹。</div>
         </section>
       </section>
 

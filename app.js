@@ -108,7 +108,6 @@ const state = {
   activeMood: "all"
 };
 
-const noteStorageKey = "clive-signal-note";
 const reactionStorageKey = "clive-signal-reactions";
 
 function pickRandom(items) {
@@ -266,56 +265,6 @@ function renderReactions() {
   });
 }
 
-function renderVisitorNote() {
-  const mount = document.querySelector("#visitor-note");
-  const stored = window.localStorage.getItem(noteStorageKey);
-  if (!stored) {
-    mount.className = "visitor-note empty-state";
-    mount.textContent = "还没人留下痕迹。";
-    return;
-  }
-
-  const note = JSON.parse(stored);
-  mount.className = "visitor-note";
-  mount.innerHTML = `
-    <div class="visitor-note-head">
-      <span>最近一条互动</span>
-      <strong>${note.time}</strong>
-    </div>
-    <p>${note.text}</p>
-  `;
-}
-
-function bindNoteForm() {
-  const form = document.querySelector("#note-form");
-  const input = document.querySelector("#note-input");
-  const counter = document.querySelector("#note-counter");
-
-  input.addEventListener("input", () => {
-    counter.textContent = `${input.value.length} / 140`;
-  });
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const text = input.value.trim();
-    if (!text) return;
-
-    const payload = {
-      text,
-      time: new Intl.DateTimeFormat("zh-CN", {
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit"
-      }).format(new Date())
-    };
-    window.localStorage.setItem(noteStorageKey, JSON.stringify(payload));
-    input.value = "";
-    counter.textContent = "0 / 140";
-    renderVisitorNote();
-  });
-}
-
 document.querySelector("#shuffle-button").addEventListener("click", () => {
   renderSignal();
   renderOddity();
@@ -329,8 +278,6 @@ renderSignal();
 renderArchiveNav();
 renderMoodFilters();
 renderReactions();
-renderVisitorNote();
 renderStatus();
-bindNoteForm();
 
 setInterval(renderSignal, 14000);

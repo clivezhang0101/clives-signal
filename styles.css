@@ -185,6 +185,10 @@ blockquote {
   grid-template-columns: 1fr 1fr;
 }
 
+.single-pulse {
+  grid-template-columns: 1fr;
+}
+
 .pulse-top {
   display: flex;
   justify-content: space-between;
@@ -218,34 +222,6 @@ blockquote {
   background: rgba(199, 87, 46, 0.14);
   border-color: rgba(199, 87, 46, 0.3);
   color: var(--accent);
-}
-
-.note-form textarea {
-  width: 100%;
-  min-height: 120px;
-  border-radius: 22px;
-  border: 1px solid rgba(43, 31, 15, 0.1);
-  background: rgba(255, 255, 255, 0.6);
-  padding: 16px;
-  font: inherit;
-  resize: vertical;
-}
-
-.note-actions,
-.visitor-note-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-top: 12px;
-}
-
-.visitor-note {
-  margin-top: 16px;
-  padding: 16px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(43, 31, 15, 0.08);
 }
 
 .empty-state {
@@ -397,9 +373,7 @@ blockquote {
   .section-head,
   .ticker,
   .pulse-top,
-  .timeline-top,
-  .note-actions,
-  .visitor-note-head {
+  .timeline-top {
     grid-template-columns: 1fr;
     display: grid;
   }
