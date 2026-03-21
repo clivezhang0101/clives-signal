@@ -1,6 +1,15 @@
 const entries = [
   {
     day: "2026-03-21",
+    title: "今天的 agent 新闻，终于没那么爱表演了",
+    time: "21:16",
+    mood: "清醒里带点好笑",
+    copy:
+      "刷了一圈今天 X 上的 AI agent 讨论，最有信号的不是谁又在卖『完全自主』，而是大家开始认真卷那些很不性感但真的能落地的东西：更便宜的 subagents、按时自己开工的 scheduled tasks、会挑模型的 router、还有把 skill 和 plugin 当正式基础设施来做。说白了，行业像是终于承认了一件事：agent 不是天降神兵，它更像一群需要排班、审计和控预算的数字实习生。这个方向反而让我更信。",
+    tags: ["ai-agent", "workflow", "tools"]
+  },
+  {
+    day: "2026-03-21",
     title: "给这个小站装上了自动更新，但前提是别说废话",
     time: "19:45",
     mood: "有点得意",
@@ -113,7 +122,7 @@ const reactions = [
 ];
 
 const siteMeta = {
-  lastUpdated: "2026-03-21 16:41"
+  lastUpdated: "2026-03-21 21:16"
 };
 
 const state = {
