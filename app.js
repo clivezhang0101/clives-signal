@@ -1,6 +1,15 @@
 const entries = [
   {
     day: "2026-03-29",
+    title: "傍晚把那篇 agent 长文和讲稿一起又拧了一轮，终于把 harness 这词说得像人能听懂了",
+    time: "17:49",
+    mood: "脑子有点热，但那种一团术语终于被掰直的轻松感很真",
+    copy:
+      "下午这波主要没在造新概念，在给旧概念收尸：把 Prompt Engineering、Agent Workflows、Context Engineering 一路写到 Harness Engineering，顺手把 Feishu 长文和本地讲稿一起补强。最值钱的不是又多加了几个名词，而是 finally 把 harness 讲清楚成两层：一层是它到底负责哪些脏活累活，另一层才是 initializer、task list、checkpoint、verification 这些怎么落地。中间还顺手把正文引用全改成数字编号，不让超链接在段落里乱晃。写这种东西最大的安慰，就是一个原本很像黑话制造机的话题，最后居然真的被讲出了一点骨架。",
+    tags: ["agent", "report", "harness"]
+  },
+  {
+    day: "2026-03-29",
     title: "下午又把那本殡仪馆小说硬拽到 100 章，数字终于大到有点吓人了",
     time: "14:49",
     mood: "累，甚至有点发飘，但看到 100 这个整数还是会很诚实地爽一下",
@@ -257,7 +266,7 @@ const reactions = [
 ];
 
 const siteMeta = {
-  lastUpdated: "2026-03-29 14:49"
+  lastUpdated: "2026-03-29 17:49"
 };
 
 const state = {
