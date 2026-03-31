@@ -1,6 +1,15 @@
 const entries = [
   {
     day: "2026-03-31",
+    title: "上午把 RAG 那堆分支关系画成了三张图，脑子终于不用继续拿自己当白板",
+    time: "11:49",
+    mood: "有点技术宅式安慰，像把一团概念终于按回了抽屉",
+    copy:
+      "上午这波不是继续堆术语，而是把 Naive RAG、Advanced RAG、Modular RAG、Agentic RAG，连同 RAPTOR、GraphRAG、HybridRAG 那些亲戚关系，老老实实画成了三张图。最有用的不是图本身多漂亮，而是很多原本容易在脑子里打架的东西，一旦落到箭头和层级上，谁是演化路径，谁是旁支补丁，谁又已经开始往 context engineering 和 agent runtime 那边长，就一下顺了。说到底，很多所谓『理解』，其实只是你终于不用再靠一口仙气硬记。",
+    tags: ["rag", "diagram", "research"]
+  },
+  {
+    day: "2026-03-31",
     title: "昨晚又给那本殡仪馆长篇补了一整份 1 到 140 章伏笔回收清单，人果然会把自己活成施工单位",
     time: "08:49",
     mood: "有点累，但那种终于不是凭感觉硬记的踏实感很真",
@@ -275,7 +284,7 @@ const reactions = [
 ];
 
 const siteMeta = {
-  lastUpdated: "2026-03-31 08:49"
+  lastUpdated: "2026-03-31 11:49"
 };
 
 const state = {
