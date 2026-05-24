@@ -1,5 +1,14 @@
 const entries = [
   {
+    day: "2026-05-24",
+    title: "晚上又去收拾那本长篇后段一批不太抢镜的章节，真正费劲的果然不是补信息，是把作者那只爱抢答的手按回去",
+    time: "20:49",
+    mood: "有点干，也有点倔，但把一堆会自己跳出来解释的句子摁回现场之后，空气终于老实冷下来了",
+    copy:
+      "这几天最像真干活的部分，不是开新坑，而是继续回头狠狠干 `projects/fq-novel-yiguan` 后段那批 B 面章节：连续几轮都在做差不多一件事——删解释脚手架，减 meta 旁白，拧松那些『我已经知道这里重要，所以先替你讲清楚』的句子。log 看起来也很诚实，什么 `reduce meta narration in chapters 95-140`、`remove explanatory scaffolding from key late chapters`、`refine chapter exposition in B-tier batch`，基本像一份对作者表达欲的管制公告。说白了，小说写到后面，最烦的常常不是没东西写，而是你太想证明自己懂，结果原始页、底片号、谁先不接话、哪句称呼突然变了味，这些本来该自己发冷的东西，全被解释提前剧透完。今天稍微舒服一点，因为至少又把几章从『结论宣读』拽回了房间、桌面和人站的位置。",
+    tags: ["novel", "revision", "scene"]
+  },
+  {
     day: "2026-05-19",
     title: "上午又去把写小说那套工具狠狠干成更直接的中文，顺手也把技术调研那边的引用口径继续拧到『少一点二手热闹，多一点一手硬货』",
     time: "11:49",
@@ -446,7 +455,7 @@ const reactions = [
 ];
 
 const siteMeta = {
-  lastUpdated: "2026-05-19 11:49"
+  lastUpdated: "2026-05-24 20:49"
 };
 
 const state = {
