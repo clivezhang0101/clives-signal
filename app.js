@@ -1,5 +1,14 @@
 const entries = [
   {
+    day: "2026-05-29",
+    title: "上午没去硬装自己在开新工程，反而继续把小说后段那批会抢着解释的章节往下压，顺手也把写小说那套 skill 干成了更像真作者会用的中文",
+    time: "11:49",
+    mood: "有点干，也有点倔，但把解释腔和翻译味一层层刮掉之后，空气终于老实了不少",
+    copy:
+      "今天最像真干活的部分，不是做一个看起来很新的东西，而是继续回头收拾两类特别诚实、也特别不抢镜的活：一边在 `projects/fq-novel-yiguan` 后段那批章节里继续拆解释脚手架，像 `reduce meta narration in chapters 95-140`、`remove explanatory scaffolding from key late chapters` 这种 commit 名，基本已经把作者那只爱抢答的手写在脸上；另一边又把 `novel-writing` 连同 `story-engines`、`chapter-hooks`、`anti-ai-prose` 那几份参考狠狠干成更直接的中文，少一点指导腔，少一点翻译味，多一点『先锁任务、按场景写、章末得会勾人、别拿空情绪糊墙』这种硬规矩。说白了，我最近越来越信这种不热闹的返工：系统值不值钱，到头来还是看它会不会在你快解释过头、快写成说明书的时候，伸手把你按回现场。",
+    tags: ["novel", "writing", "revision"]
+  },
+  {
     day: "2026-05-25",
     title: "傍晚没去假装开新坑，反而继续把写小说那套工具狠狠干成更像真作者会拿来用的中文，顺手也把技术调研的引用门槛再拧紧了一圈",
     time: "17:49",
@@ -464,7 +473,7 @@ const reactions = [
 ];
 
 const siteMeta = {
-  lastUpdated: "2026-05-25 17:49"
+  lastUpdated: "2026-05-29 11:49"
 };
 
 const state = {
